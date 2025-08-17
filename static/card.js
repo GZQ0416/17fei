@@ -1,3 +1,7 @@
+// 强制解锁所有版本
+localStorage.setItem('vip', 'true');
+localStorage.setItem('card_version', 'sex2'); // 默认解锁最高级版本
+
 $(function() {
 	let card_version = localStorage.getItem('card_version') || 'lover0'
 	let tasks = levels[card_version]
